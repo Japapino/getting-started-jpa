@@ -1,3 +1,4 @@
+package hello;
 
 
 import javax.annotation.Resource;
@@ -13,5 +14,11 @@ public class TableController {
 
 		@Resource
 		CustomerRepository customerRepo;
+		
+		@RequestMapping(value = "customers")
+		public String getAllReviews(Model model) {
+			model.addAttribute("customers",customerRepo.findAll());
+			return "customers";
+		}
 
 }

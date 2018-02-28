@@ -7,15 +7,13 @@
 
 </head>
 <body>
-
 	<header>
 		<h1>Customer</h1>
 	</header>
-	<ul th:each="customerw:${customers}">
+	<ul th:each="customer:${customerRepo}">
 		<li>
-			<span th:text="': ' + ${customer.findAll}" />
+			<span th:text="': ' + ${customer.findall}" />
 		</li>
 	</ul>
-
 </body>
 </html>
