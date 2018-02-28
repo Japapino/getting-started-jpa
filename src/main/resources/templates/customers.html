@@ -3,16 +3,17 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-<title>A list of reviews</title>
+<title>Customers</title>
 
 </head>
 <body>
 	<header>
 		<h1>Customer</h1>
 	</header>
-	<ul th:each="customer:${customerRepo}">
+
+	<ul th:each="customer:${Customer}">
 		<li>
-			<span th:text="': ' + ${customer.findall}" />
+			<p>Customer</p> <span th:text="': ' + ${customer.findall}" />
 		</li>
 	</ul>
 </body>
