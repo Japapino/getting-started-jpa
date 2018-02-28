@@ -27,5 +27,17 @@ public class Customer {
                 "Customer[id=%d, firstName='%s', lastName='%s']",
                 id, firstName, lastName);
     }
+    
+    public Long getId() {
+    	return id; 
+    }
+    
+    public String getFirstName() {
+    	return firstName;
+    }
+    public String getLastName() {
+    	return lastName; 
+    }
+    
 
 }

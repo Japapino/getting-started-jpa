@@ -13,7 +13,9 @@
 
 	<ul th:each="customer:${customer}">
 		<li>
-			<p>Customer</p> <span th:text="': ' + ${customer}" />
+			<p>Customer ID:<span th:text="': ' + ${customer.Id}" /></p>
+			<p>First Name: <span th:text="': ' + ${customer.FirstName}" /></p>
+			<p>Last Name:<span th:text="': ' + ${customer.LastName}" /></p>
 		</li>
 	</ul>
 </body>

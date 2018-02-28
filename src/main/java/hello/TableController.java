@@ -17,7 +17,7 @@ public class TableController {
 		
 		@RequestMapping(value = "customers")
 		public String getAllReviews(Model model) {
-			model.addAttribute("customer",customerRepo.findAll());
+			model.addAttribute("customer",customerRepo.findByLastName("Bauer"));
 			return "customers";
 		}
 
