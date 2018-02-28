@@ -11,9 +11,9 @@
 		<h1>Customer</h1>
 	</header>
 
-	<ul th:each="customer:${Customer}">
+	<ul th:each="customer:${customer}">
 		<li>
-			<p>Customer</p> <span th:text="': ' + ${customer.findall}" />
+			<p>Customer</p> <span th:text="': ' + ${customer}" />
 		</li>
 	</ul>
 </body>
